@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Exercise 3</title>
+        <link rel="stylesheet" type="text/css" href="ex3_style.css">
+        <script type="text/javascript" src="ex3_formChecker.js"></script>
+
+    </head>
+    <body>
+    <form action="ex3_customerBackend.php" method="POST">
+        <h4>Username: <input type="text" id="username" name="username"></h4>
+        <h4>Password: <input type="password" id="password" name="password"></h4>
+
+        <span>
+            <p id="validationMessage" name="validationMessage"></p>
+        </span>
+        <br>
+
+        <h4>iPhone 14</h4>
+        <p>Quantity: <input type="number" min="0" value="0" name="product1"></p>
+        <p>Price: $799</p>
+
+        <h4>iPhone 14 Plus</h4>
+        <p>Quantity: <input type="number" min="0" value="0" name="product2"></p>
+        <p>Price: $899</p>
+
+        <h4>iPhone 14 Pro</h4>
+        <p>Quantity: <input type="number" min="0" value="0" name="product3"></p>
+        <p>Price: $999</p>
+
+        <h4>iPhone 14 Pro Max</h4>
+        <p>Quantity: <input type="number" min="0" value="0" name="product4"></p>
+        <p>Price: $1099</p>
+
+        <h4>Choose Shipping Option:</h4>
+
+        Free 7 Day <input type="radio" id="shipOpt1" name="shipping" value="0" checked='checked'>
+        $50.00 Overnight <input type="radio" id="shipOpt2" name="shipping" value="50">
+        $5.00 Three Day <input type="radio" id="shipOpt3" name="shipping" value="5">
+        <br>
+
+        <input type="reset" value="Reset" id="reset" name="reset">
+        <button onclick="validation()" id="submit" name="submit">Submit</button>
+    </form>
+    </body>
+</html>
